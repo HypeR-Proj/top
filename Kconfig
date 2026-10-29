@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2026 roolrz
+# SPDX-License-Identifier: Apache-2.0
+
+config SYSTEM_APP_TOP
+    bool "top (/bin/top)"
+    default y
+    help
+        Build and deploy hyper-top at /bin/top.
+
