@@ -1,30 +1,12 @@
 {
+  "SPDX-FileCopyrightText": "2026 roolrz",
+  "SPDX-License-Identifier": "Apache-2.0",
   "version": 1,
   "name": "top",
   "kind": "application",
   "origin": {
     "repository": "https://github.com/roolrz/HypeR",
     "commit": "8d42d047058a2b58a291803700e86487fb723f7a"
-  },
-  "sources": {
-    "Cargo.toml": "app/top/Cargo.toml",
-    "component.mk": "app/top/component.mk",
-    "src/cli.rs": "app/top/src/cli.rs",
-    "src/display.rs": "app/top/src/display.rs",
-    "src/lib.rs": "app/top/src/lib.rs",
-    "src/main.rs": "app/top/src/main.rs",
-    "src/sampling.rs": "app/top/src/sampling.rs",
-    "src/view.rs": "app/top/src/view.rs",
-    "tests/cli.rs": "app/top/tests/cli.rs",
-    "tests/display.rs": "app/top/tests/display.rs",
-    "tests/fixtures.rs": "app/top/tests/fixtures.rs",
-    "tests/sampling.rs": "app/top/tests/sampling.rs",
-    "tests/view.rs": "app/top/tests/view.rs"
-  },
-  "SPDX-FileCopyrightText": "2026 roolrz",
-  "SPDX-License-Identifier": "Apache-2.0",
-  "mounts": {
-    "": "app/top"
   },
   "packages": [
     "hyper-top"
@@ -35,44 +17,5 @@
       "app-test",
       "APP_TEST_PACKAGE=hyper-top"
     ]
-  ],
-  "cargo_context": {
-    "Cargo.toml": {
-      "workspace": null,
-      "membership": "..",
-      "dependency_paths": {
-        "target.cfg(target_os = \"hyper\")/dependencies/hyper-clap-shared": "lib/clap",
-        "target.cfg(target_os = \"hyper\")/dependencies/hyper-tool-args-shared": "lib/tool-args/shared",
-        "target.cfg(target_os = \"hyper\")/dependencies/hyper-text-ui-shared": "lib/text-ui/shared",
-        "target.cfg(not(target_os = \"hyper\"))/dependencies/hyper-tool-args": "lib/tool-args",
-        "target.cfg(not(target_os = \"hyper\"))/dependencies/hyper-text-ui": "lib/text-ui"
-      },
-      "inherited_dependencies": {
-        "/dependencies/clap": {
-          "workspace": true
-        },
-        "/dependencies/hyper-os": {
-          "workspace": true
-        },
-        "/dependencies/hyper-rt": {
-          "workspace": true
-        },
-        "target.cfg(target_os = \"hyper\")/dependencies/hyper-clap-shared": {
-          "workspace": true
-        },
-        "target.cfg(target_os = \"hyper\")/dependencies/hyper-tool-args-shared": {
-          "workspace": true
-        },
-        "target.cfg(target_os = \"hyper\")/dependencies/hyper-text-ui-shared": {
-          "workspace": true
-        },
-        "target.cfg(not(target_os = \"hyper\"))/dependencies/hyper-tool-args": {
-          "workspace": true
-        },
-        "target.cfg(not(target_os = \"hyper\"))/dependencies/hyper-text-ui": {
-          "workspace": true
-        }
-      }
-    }
-  }
+  ]
 }
