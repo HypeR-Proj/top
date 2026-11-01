@@ -3,8 +3,6 @@
 
 //! Capability-scoped monitor with immediate snapshots and deadline-driven input.
 #[cfg(target_os = "hyper")]
-extern crate hyper_clap_shared as _;
-#[cfg(target_os = "hyper")]
 extern crate hyper_text_ui_shared as hyper_text_ui;
 
 use clap::Parser;
@@ -197,3 +195,6 @@ fn main() -> ExitCode {
         }
     }
 }
+
+#[cfg(target_os = "hyper")]
+extern crate hyper_clap_shared as clap;

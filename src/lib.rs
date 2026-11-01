@@ -15,3 +15,6 @@ pub mod view;
 #[cfg(test)]
 #[path = "../tests/fixtures.rs"]
 pub(crate) mod fixtures;
+
+#[cfg(target_os = "hyper")]
+extern crate hyper_clap_shared as clap;
